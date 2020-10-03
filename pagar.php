@@ -13,7 +13,7 @@ $preference->back_urls = array(
     "pending" => "http://marioandisco-mp-comerce-php.herokuapp.com/pending.php?error=pending"
 );
 $preference->auto_return = "approved";
-// Crea un ítem en la preferencia
+// Crea un Ã­tem en la preferencia
 $item = new MercadoPago\Item();
 $item->id = $_POST['id'];
 $item->title = $_POST['title'];
@@ -33,7 +33,7 @@ $preference->save();
 </head>
 
 <body>
-<form action="/procesar-pago" method="POST">
+<form action="/procesar-pago.php" method="POST">
   <script
    src="https://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js"
    data-preference-id="<?php echo $preference->id; ?>">
