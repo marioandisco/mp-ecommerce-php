@@ -132,10 +132,10 @@
                                     </div>
                                     <form action="/pagar.php" method="post">
                                     	<input type="hidden" name="id" value= 1234>
-                                    	<input type="hidden" name="title" value= <?php echo $_POST['title'] ?>>
-                                    	<input type="hidden" name="descripcion" value= "Dispositivo móvil de Tienda e-commerce​">
-                                    	<input type="hidden" name="img" value= <?php echo $_POST['img'] ?>>
-                                    	<input type="hidden" name="price" value= <?php echo $_POST['price'] ?>>
+                                    	<input type="hidden" name="title" value= "<?php echo $_POST['title'] ?>">
+                                    	<input type="hidden" name="descripcion" value= "Dispositivo móvil de Tienda e-commerce">
+                                    	<input type="hidden" name="img" value= "<?php echo $_POST['img'] ?>">
+                                    	<input type="hidden" name="price" value= 10000>
                                     	<input type="hidden" name="external_reference" value= "marioandisco@hotmail.com">
                                     	<button type="submit" class="mercadopago-button" formmethod="post">Pagar la compra</button>
                                     </form>
