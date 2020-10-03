@@ -130,7 +130,7 @@
                                             <?php echo "$" . $_POST['unit'] ?>
                                         </h3>
                                     </div>
-                                    <form action="/pagar.php" method="get">
+                                    <form action="/pagar.php" method="post">
                                     	<input type="hidden" name="id" value= 1234>
                                     	<input type="hidden" name="title" value= <?php echo $_POST['title'] ?>>
                                     	<input type="hidden" name="descripcion" value= "Dispositivo móvil de Tienda e-commerce​">
