@@ -6,25 +6,25 @@ require __DIR__ .  "/vendor/autoload.php";
 //include_once("/vendor/autoload.php");
 
 // Agrega credenciales
-//MercadoPago\SDK::setAccessToken('TEST-1893221979840508-092814-f63750355fb4208c2ccea52e0eb75507-9237701');
+MercadoPago\SDK::setAccessToken('TEST-1893221979840508-092814-f63750355fb4208c2ccea52e0eb75507-9237701');
 
 //$datos = array();
 // Crea un objeto de preferencia
-//$preference = new MercadoPago\Preference();
+$preference = new MercadoPago\Preference();
 // Crea un ítem en la preferencia
-//$item = new MercadoPago\Item();
-//$item->id = "1234";
-//$item->title = $_POST['title'];
-//$item->descripcion = "Dispositivo móvil de Tienda e-commerce";
-//$item->quantity = 1;
-//$item->img = $_POST['img'];
-//$item->unit_price = $_POST['price'];
+$item = new MercadoPago\Item();
+$item->id = "1234";
+$item->title = $_POST['title'];
+$item->descripcion = "Dispositivo móvil de Tienda e-commerce";
+$item->quantity = 1;
+$item->img = $_POST['img'];
+$item->unit_price = $_POST['price'];
   //$item->unit_price = "265";
-//$item->external_reference = "marioandisco@hotmail.com";
+$item->external_reference = "marioandisco@hotmail.com";
   //$datos[] = $item;
   //$preference->items = $datos;
-//$preference->items = array($item);
-//$preference->save();
+$preference->items = array($item);
+$preference->save();
 ?>
 <!DOCTYPE html>
 <html class="supports-animation supports-columns svg no-touch no-ie no-oldie no-ios supports-backdrop-filter as-mouseuser" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
