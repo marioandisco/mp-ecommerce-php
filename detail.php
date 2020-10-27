@@ -6,7 +6,7 @@ require __DIR__ .  "/vendor/autoload.php";
 //include_once("/vendor/autoload.php");
 
 // Agrega credenciales
-MercadoPago\SDK::setAccessToken('TEST-1893221979840508-092814-f63750355fb4208c2ccea52e0eb75507-9237701');
+//MercadoPago\SDK::setAccessToken('TEST-1893221979840508-092814-f63750355fb4208c2ccea52e0eb75507-9237701');
 
 //$datos = array();
 // Crea un objeto de preferencia
