@@ -15,12 +15,12 @@ $preference = new MercadoPago\Preference();
 $item = new MercadoPago\Item();
 $item->id = "1234";
 $item->title = $_POST['title'];
-$item->descripcion = "Dispositivo móvil de Tienda e-commerce";
+//$item->descripcion = "Dispositivo móvil de Tienda e-commerce";
 $item->quantity = 1;
-$item->img = $_POST['img'];
+//$item->img = $_POST['img'];
 $item->unit_price = $_POST['price'];
   //$item->unit_price = "265";
-$item->external_reference = "marioandisco@hotmail.com";
+//$item->external_reference = "marioandisco@hotmail.com";
   //$datos[] = $item;
   //$preference->items = $datos;
 $preference->items = array($item);
@@ -151,7 +151,7 @@ $preference->save();
                                             <?php echo $_POST['price']; ?>
                                         </h3>
                                         <h3 >
-                                            <?php echo "$" . $_POST['unit']; ?>
+                                            <?php echo $_POST['unit']; ?>
                                         </h3>
                                     </div>
 									<form action="/procesar-pago.php" method="POST">
