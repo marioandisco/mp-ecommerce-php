@@ -13,13 +13,14 @@ MercadoPago\SDK::setAccessToken('TEST-1261130280105518-110315-06b0adc1804de5369b
 $preference = new MercadoPago\Preference();
 // Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
-$item->id = "1234";
-$item->title = $_POST['title'];
+//$item->id = "1234";
+//$item->title = $_POST['title'];
+$item->title = 'Pantalon';
 //$item->descripcion = "Dispositivo móvil de Tienda e-commerce";
 $item->quantity = 1;
 //$item->img = $_POST['img'];
-$item->unit_price = $_POST['price'];
-  //$item->unit_price = "265";
+//$item->unit_price = $_POST['price'];
+  $item->unit_price = "265";
 //$item->external_reference = "marioandisco@hotmail.com";
   //$datos[] = $item;
   //$preference->items = $datos;
