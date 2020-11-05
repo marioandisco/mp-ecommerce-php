@@ -1,12 +1,12 @@
 <?php
 // SDK de Mercado Pago
-require __DIR__ .  "/vendor/autoload.php";
+require __DIR__ .  '/vendor/autoload.php';
 //require 'vendor/autoload.php';
 //require_once "/vendor/autoload.php";
 //include_once("/vendor/autoload.php");
 
 // Agrega credenciales
-MercadoPago\SDK::setAccessToken('TEST-1893221979840508-092814-f63750355fb4208c2ccea52e0eb75507-9237701');
+MercadoPago\SDK::setAccessToken('TEST-1261130280105518-110315-06b0adc1804de5369b72af7b9793f0ae-667320427');
 
 //$datos = array();
 // Crea un objeto de preferencia
@@ -39,7 +39,6 @@ $preference->save();
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
-    <script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
 
     <link rel="stylesheet" href="./assets/category-landing.css" media="screen, print">
 
